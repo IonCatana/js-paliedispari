@@ -1,45 +1,32 @@
-// Palidroma
 
-// Chiedere all’utente di inserire una parola
-let parola = prompt('Inserisci una parola');
 
-// Creare le variebile
-let carattere;
-let parolaInversa = '';
-let i = parola.length - 1;
+// **************** Pari e Dispari*****************
 
-while (i >= 0) {
-  carattere = parola[i];
-  parolaInversa += carattere;
-  console.log(carattere);
-  i--;
+// Creare le varibile
+let numeroUtente;
+let numeroPc;
+console.log(numeroUtente)
+
+numeroUtente = prompt('Inserisci il numero');
+numeroUtente = numeroUtente * 1;
+if (numeroUtente < 0) {
+  numeroUtente = -numeroUtente;
 }
-console.log(parolaInversa);
-
-
-// Creare una funzione per capire se la parola inserita è palindroma
-// function palindroma(word) {
-//   while (i >= 0) {
-//     carattere = word[i];
-//     parolaInversa += carattere;
-//     console.log(carattere);
-//     i--;
-//   }
-//   return parolaInversa
-
-// }
-// const risultato = palindroma(parola)
-// console.log(risultato)
-
-if (parola == parolaInversa) {
-  console.log('la parola è palindroma');
+numeroUtente;
+while (numeroUtente > 1) {
+  numeroUtente = numeroUtente - 2;
+}
+if (numeroUtente == 0) {
+  alert('Il numero è pari');
 } else {
-  console.log('la parola non è palindroma');
+  alert('Il numero è dispari');
 }
 
-
-
-// Pari e Dispari
+function getRandomInt(1, 5) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 // Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
 // Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari(usando una funzione)
